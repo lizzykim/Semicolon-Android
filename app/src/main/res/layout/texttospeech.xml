@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".TextToSpeech">
+
+
+    <EditText
+        android:id="@+id/input_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="문장을 입력하시오" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 속  도  "
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/speed_progressbar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progress="50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 음 높이"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/pitch_progressbar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progress="50" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="말하기"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/gotoSTT"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="STT로"/>
+
+
+</LinearLayout>
