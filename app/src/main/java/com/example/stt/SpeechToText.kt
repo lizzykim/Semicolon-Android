@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-
+//추후에 완성
 class SpeechToText : AppCompatActivity() {
 
     lateinit var mgotoTTS: Button
